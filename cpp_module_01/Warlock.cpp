@@ -53,7 +53,7 @@ void Warlock::introduce() const
 
 void Warlock::learnSpell(ASpell* spell)
 {
-	if (spell && _spellbook.find(spell->getName()) == _spellbook.end())
+	if (spell)
 		_spellbook[spell->getName()] = spell->clone();
 }
 
