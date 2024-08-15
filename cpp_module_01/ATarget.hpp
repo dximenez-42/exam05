@@ -15,7 +15,7 @@ public:
 	ATarget(std::string type);
 	ATarget(ATarget const& src);
 	ATarget& operator=(ATarget const& rhs);
-	~ATarget();
+	virtual ~ATarget();
 
 	std::string const& getType() const;
 
